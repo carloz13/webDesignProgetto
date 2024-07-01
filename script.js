@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var viewportHeight = window.innerHeight;
     var viewportWidth = window.innerWidth;
 
-    banner.style.width = window.screen.width + "px";
     banner.style.height = homepage.offsetHeight / 1.5 + "px";
 
     // creazione frame delle immagini del banner 
@@ -270,7 +269,7 @@ function allTextsChildrens() {
         "Gaia Viriglio",
         "Corso magistrale Design Prodotto Evento",
         "Corso triennale Informatica",
-        "Laboratorio di Web Design - Prof. Andrea Vian a.a. 2023/2024"
+        "Laboratorio di Web Design - Prof. Andrea Vian <br>a.a. 2023/2024"
     ];
 }
 
