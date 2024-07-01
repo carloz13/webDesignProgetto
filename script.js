@@ -244,7 +244,7 @@ function allTextsBanner() {
         "<span class='charSpecial'>\“</span>Ben fatto! Hai superato il Sahara! Ora ti aspetta un'altra sfida:<br>lo Stretto di Gibilterra.<span class='charSpecial'>\”</span>",
         "Lo Stretto di Gibilterra era un passaggio stretto e ventoso <br>che separava l'Africa dall<span class='charSpecial'>'</span>Europa. Le correnti erano forti <br>e Rondine dovette lottare contro i venti impetuosi. <br>Attraversare lo Stretto era una delle parti pi<span class='charSpecial'>ù</span> difficili del suo viaggio, <br>ma la vista della terra dall<span class='charSpecial'>’</span>altra parte le dava la forza necessaria.",
         "Con grande determinazione, <br>raggiunse finalmente le coste spagnole.",
-        "Dalla Spagna, Rondine vol<span class='charSpecial'>ò</span> verso i maestosi Monti Pirenei. Qui, i boschi erano <br>fitti e verdi, pieni di alberi alti e profumati. Era un luogo meraviglioso, ma il volo <br>tra le montagne non era semplice. Le correnti d'aria potevano <br>essere imprevedibili,<br>e a volte il cielo si copriva di nubi minacciose.",
+        "Dalla Spagna, Rondine vol<span class='charSpecial'>ò</span> verso i maestosi Monti Pirenei.<br>Qui, i boschi erano <br>fitti e verdi, pieni di alberi alti e profumati. Era un luogo meraviglioso, ma il volo <br>tra le montagne non era semplice. Le correnti d'aria potevano <br>essere imprevedibili, e a volte il cielo si copriva di nubi minacciose.",
         "<span class='charSpecial'>\“</span>Stai attenta, piccola rondine, <br>queste vette che separano <br>la Spagna dalla Francia <br>possono essere pericolose.<span class='charSpecial'>\”</span>",
         "Ma lei era una rondine coraggiosa. <br>Sapeva quando riposare sui rami <br>e quando riprendere il volo.",
         "Attravers<span class='charSpecial'>ò</span> i Pirenei con grazia e forza, <br>giungendo finalmente dall<span class='charSpecial'>’</span>altra parte.",
@@ -314,7 +314,7 @@ function addCredits() {
     frames[20].insertAdjacentHTML("beforeend", `
         <div id='containerFinale'>
             <p class='testoFinale'>${texts[4]}</p>
-            <a class='linkImages' id='saveTheChildrenLinkImg' href='https://www.savethechildren.it.html#crediti'>
+            <a class='linkImages' id='saveTheChildrenLinkImg' href='https://www.savethechildren.it#crediti'>
                 <img id='saveTheChildren' src='images/loghi/saveTheChildren.svg' alt='Save The Children'>
             </a>
             <div id='crediti'>
@@ -329,7 +329,7 @@ function addCredits() {
                 <h2>Illustratrice:</h2>
                 <p class='testoFinale testoCrediti'>${texts[9]}</p>
                 <p id='lastText' class='testoFinale testoCrediti'>${texts[10]}</p>
-                <a class='linkImages' href='https://unige.it.html#crediti'><img src='images/loghi/logoUnige.svg' alt='Università di genova'></a>
+                <a class='linkImages' href='https://unige.it#crediti'><img src='images/loghi/logoUnige.svg' alt='Università di genova'></a>
             </div>
         </div>
     `);
