@@ -6,6 +6,7 @@ html, body {
 html {
     font-family: Arial;
     color: #11053b;
+	scrollbar-width: none;
     /* font-size: 1em; */
     /* line-height: 8px; */
     
@@ -41,21 +42,23 @@ p {
     margin-bottom: -3px;
     position: relative;
     -ms-overflow-style: none;
-    
 }
 
-#homepage img {
+#home_sfondo {
     width: 100%;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
-@media screen and (max-width: 480px) {
-    #homepage img {
-        width: auto;
-    }
+#home_scritta {
+	position: absolute;
+	top:0;
+	left:10vw;
+	
+    height: 100%;
+	max-width: 90vw;
+	object-fit: contain;
 }
-
 
 #animazioneDissolvenza {
     height: 100vh;
@@ -304,11 +307,10 @@ p {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     z-index: 99;
 }
 #loadingBird {
-    width: 20vw;
     position: fixed;
 }
 #loadingText {
@@ -401,218 +403,219 @@ z-index: 2;
 
 /* -----------------------------bambini----------------------------- */
 
-    #insiemeFramesBambini {
-        position: relative;
-        color: white;
-        background-color: white;
-    }
+#insiemeFramesBambini {
+	position: relative;
+	color: white;
+	background-color: white;
+}
 
-    .frameBambini {
-        width: 100%;
-        position: relative;
-        margin-top: -2px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
+.frameBambini {
+	width: 100%;
+	position: relative;
+	margin-top: -2px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
 
-    .frameBambini:last-child {
-        height: 40vh;
-    }
+.frameBambini:last-child {
+	height: 40vh;
+}
 
-    .frameBambini img {
-        width: 100%;
-        height: 100%;
-    }
+.frameBambini img {
+	width: 100%;
+	height: 100%;
+}
 
 
 
-    /* #frameBambini2 {
-        height: 200vh;
-    } */
+/* #frameBambini2 {
+	height: 200vh;
+} */
 
-    .frameBambini .containerText {
-        text-align: center;
-    }
+.frameBambini .containerText {
+	text-align: center;
+}
 
-    .frameBambini p {
-        text-align: center;
-        text-wrap: wrap;
-        width: 45%;
-        height: 25%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+.frameBambini p {
+	text-align: center;
+	text-wrap: wrap;
+	width: 45%;
+	height: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
-    .testiStoriaBambini {
-        font-family: Rouli;
-        font-weight: bold;
-        font-size: 2.5vw;
-        height: 75%;
-        position: relative;
-        top: 0;
-        padding-top: 0;
-        z-index: 4;
+.testiStoriaBambini {
+	font-family: Rouli;
+	font-weight: bold;
+	font-size: 2.5vw;
+	height: 75%;
+	position: relative;
+	top: 0;
+	padding-top: 0;
+	z-index: 4;
 
-    }
+}
 
-    #testoBambini1 {
-        top: 0%;
-        width: 60%;
-        height: 40vh;
-    }
+#testoBambini1 {
+	top: 0%;
+	width: 60%;
+	height: 40vh;
+}
 
-    #testoBambini2 {
-        height: 75%;
-        position: relative;
-        top: 0;
-        padding-top: 0;
-    }
+#testoBambini2 {
+	height: 75%;
+	position: relative;
+	top: 0;
+	padding-top: 0;
+}
 
-    #testoBambini3 {
-        padding-top: 0;
-    }
+#testoBambini3 {
+	padding-top: 0;
+}
 
-    #textContainerAnimation1 {
-        height: 25%;
-        width: 100%;
-        top: 0;
-        position: absolute;
-    }
+#textContainerAnimation1 {
+	height: 25%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+}
 
-    #textContainerAnimation2 {
-        height: 25%;
-        width: 100%;
-        bottom: -250%;
-        position: absolute;
-    }
+#textContainerAnimation2 {
+	height: 25%;
+	width: 100%;
+	bottom: -250%;
+	position: absolute;
+}
 
-    .storia {
-        font-family: Rouli;
-        font-size: 2.7vw;
-        position: relative;
-        top: 0;
-        margin-bottom: 0.7em;
-    }
+.storia {
+	font-family: Rouli;
+	font-size: 2.7vw;
+	position: relative;
+	top: 0;
+	margin-bottom: 0.7em;
+}
 
-    .title {
-        font-family: Rouli;
-        font-size: 25vw;
-        z-index: 5;
-        position: relative;
-        top: 0;
-        margin-top: 0;
-        margin-bottom: 0.5em;    
-    }
+.title {
+	font-family: Rouli;
+	font-size: 25vw;
+	z-index: 5;
+	position: relative;
+	top: 0;
+	margin-top: 0;
+	margin-bottom: 0.5em;    
+}
 
-    .containerStorieBambini {
-        position: absolute;
-        width: 100%;
-        height: 400%;
-        text-align: center;
-    }
+.containerStorieBambini {
+	position: absolute;
+	width: 100%;
+	height: 400%;
+	text-align: center;
+}
 
-    #containerFinale {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        text-align: center;
-        font-family: Rouli;
-        justify-content: center;
-        z-index: 5;
-    }
+#containerFinale {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	text-align: center;
+	font-family: Rouli;
+	justify-content: center;
+	z-index: 5;
+}
 
-    #containerFinale h2 {
-        font-size: 3vw; 
-    }
+#containerFinale h2 {
+	font-size: 3vw; 
+}
 
-    .testoFinale {
-        width: 50% !important;
-        font-weight: bold;
-        position: relative;
-        font-size: 2.5vw;
-        margin-bottom: 5vh;
-    }
+.testoFinale {
+	width: 50% !important;
+	font-weight: bold;
+	position: relative;
+	font-size: 2.5vw;
+	margin-bottom: 5vh;
+}
 
-    .testoCrediti {
-        font-weight: normal;
-        margin-bottom: 0;
-    }
+.testoCrediti {
+	font-weight: normal;
+	margin-bottom: 0;
+}
 
-    #saveTheChildren {
-        width: 100%;
-    }
-    
-    .linkImages {
-        display: flex;
-        justify-content: center;
-        width: 15%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+#saveTheChildren {
+	width: 100%;
+}
 
-    #saveTheChildrenLinkImg {
-        width: 40%;
-    }
+.linkImages {
+	display: flex;
+	justify-content: center;
+	width: 15%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
-    #lastText {
-        position: relative;
-        margin-bottom: 5vh;
-    }
+#saveTheChildrenLinkImg {
+	width: 40%;
+}
 
-    .linkText {
-        color: white;
-    }
+#lastText {
+	position: relative;
+	margin-bottom: 5vh;
+}
 
-    .linkText:visited {
-        color: white;
-    }
+.linkText {
+	color: white;
+}
 
-    @media screen and (max-height: 580px) {
-        #testoBambini1 {
-            font-size: 4vh;
-        }
+.linkText:visited {
+	color: white;
+}
 
-    }
+@media screen and (min-width: 1024px) {
+	.testiStoriaBambini {
+		font-size: 2vw;
+	}
+	
+	.storia {
+		font-size: 2vw;
+	}
 
-    @media screen and (min-width: 1024px) {
-        .testiStoriaBambini {
-            font-size: 2vw;
-        }
-        
-        .storia {
-            font-size: 2vw;
-        }
+	.title {
+		font-size: 10vw;
+	}
 
-        .title {
-            font-size: 10vw;
-        }
+	#testoFinale {
+		font-size: 2vw;
+	}
+}
 
-        #testoFinale {
-            font-size: 2vw;
-        }
-    }
+/*
+@media screen and (max-height: 580px) {
+	#testoBambini1 {
+		font-size: 4vh;
+	}
 
-    @media screen and (max-width: 700px) {
-        .testiStoriaBambini {
-            font-size: 3vw;
+}
 
-        }
-        .storia {
-            font-size: 3vw;
-        }
+@media screen and (max-width: 700px) {
+	.testiStoriaBambini {
+		font-size: 3vw;
 
-        .title {
-            font-size: 9vw;
-        }
-        
-        #testoFinale {
-            font-size: 3vw;
-        }
-    }
+	}
+	.storia {
+		font-size: 3vw;
+	}
 
+	.title {
+		font-size: 9vw;
+	}
+	
+	#testoFinale {
+		font-size: 3vw;
+	}
+}
+*/
 /* -----------------------------menu----------------------------- */
 
 menu, ul {
