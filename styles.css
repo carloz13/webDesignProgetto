@@ -304,10 +304,11 @@ p {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     z-index: 99;
 }
 #loadingBird {
+    width: 20vw;
     position: fixed;
 }
 #loadingText {
