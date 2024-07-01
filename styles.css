@@ -273,6 +273,7 @@ p {
 }
 #loadingBird {
     position: fixed;
+    height: 20vh;
 }
 #loadingText {
     font-family: Rouli;
