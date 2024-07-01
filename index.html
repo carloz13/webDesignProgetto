@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <title>Se fossimo come Rondine</title>
 	<link rel="icon" type="image/x-icon" href="images/icona_scheda.webp">
     <link rel="stylesheet" href="styles.css">
@@ -15,29 +15,32 @@
 
 <body>
     <div id="homepage">
-        <img draggable="false" src="images/homepageNuovo.png" alt="sfondo della homepage sulla storia della rondine">
+        <img id="home_sfondo" draggable="false" src="images/homepage/home_sfondo.png" alt="Sfondo della homepage">
+		<img id="home_scritta" draggable="false" src="images/homepage/home_scritta.png" alt="Se fossimo come rondine">
     </div>
+	
+	<div id="storiaRondine">
+		<div id="bannerContainer"> <!-- div per avere altezza uguale a lunghezza del banner per scroll orizzontale-->
+				<div id="banner">
+					
+					<div id="insiemeFramesBanner"> <!-- frame creati con JavaScript --> </div>
 
-	<div id="bannerContainer"> <!-- div per avere altezza uguale a lunghezza del banner per scroll orizzontale-->
-		<div id="banner">
-			
-			<div id="insiemeFramesBanner"> <!-- frame creati con JavaScript --> </div>
+					<div id="sittingBirdContainer" class="no-caret">
+						<img draggable="false" src="images/rondine/rondineSeduta.webp" class="birds" id="uccelloSeduto" alt="Rondine seduta su un ramo">
+					</div>
 
-			<div id="sittingBirdContainer" class="no-caret">
-				<img draggable="false" src="images/rondine/rondineSeduta.webp" class="birds" id="uccelloSeduto" alt="Rondine seduta su un ramo">
-			</div>
+					<div id="sittingBirdEndContainer" class="no-caret">
+						<img draggable="false" src="images/rondine/rondineSeduta.webp" id="uccelloSedutoFine" class="birds" alt="Rondine seduta su una casa">
+					</div>
 
-			<div id="sittingBirdEndContainer" class="no-caret">
-				<img draggable="false" src="images/rondine/rondineSeduta.webp" id="uccelloSedutoFine" class="birds" alt="Rondine seduta su una casa">
-			</div>
-
-		</div>
-		
-		<div id="birdContainer">
-			<img id="birdImgStory" draggable="false" alt="immagine della rondine mentre è in volo">
+				</div>
+				
+				<div id="birdContainer">
+					<img id="birdImgStory" draggable="false" alt="Rondine in volo">
+				</div>
 		</div>
 	</div>
-    
+	
     <div id="animazioneDissolvenza">
         <div id="dissolvenza"></div>
     </div>
@@ -47,16 +50,11 @@
 
     <div id="menu">
         <menu>
-            <ul >
-                <li class="no-caret"><a href="#bannerContainer" id="linkBird"><img src="images/menu/iconaRondine.webp" draggable="false" alt="inizio storia della rondine"></a></li>
-                
-                <li class="no-caret"><a href="index.html"><img src="images/menu/icona1.webp" draggable="false" alt="inizio storia del primo bambino"></a></li>
-
-                
-                <li class="no-caret"><a href="index.html"><img src="images/menu/icona2.webp" draggable="false" alt="inizio storia del secondo bambino"></a></li>
-                
-                <li class="no-caret"><a href="index.html"><img src="images/menu/icona3.webp" draggable="false" alt="inizio storia del terzo bambino"></a></li>
-            
+            <ul class="no-caret">
+                <li><a href="#storiaRondine" id="linkBird"><img src="images/menu/iconaRondine.webp" draggable="false" alt="Vai alla rondine"></a></li>
+                <li><a href="#storia1"><img src="images/menu/icona1.webp" draggable="false" alt="Vai alla storia di Hoa"></a></li>
+                <li><a href="#storia2"><img src="images/menu/icona2.webp" draggable="false" alt="Vai alla storia di Abed"></a></li>
+                <li><a href="#storia3"><img src="images/menu/icona3.webp" draggable="false" alt="Vai alla storia di Aisha"></a></li>
             </ul>
         </menu>
     </div>
