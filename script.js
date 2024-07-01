@@ -335,6 +335,12 @@ function addCredits() {
                 <p class='testoFinale testoCrediti'>${texts[11]}</p>
                 <p id='lastText' class='testoFinale testoCrediti'>${texts[12]}</p>
                 <a class='linkImages' href='https://unige.it'><img src='images/loghi/logoUnige.svg' alt='Università di genova'></a>
+            </div>
+        </div>
+            </div>
+        </div>
+    `);
+    /*
                 <div class="menu-social">
                     <ul id="ul-social">
                         <li class="li-social">
@@ -369,12 +375,7 @@ function addCredits() {
                         </li>
                     </ul>
                     </div>
-            </div>
-        </div>
-            </div>
-        </div>
-    `);
-    
+    */
 }
 
 function addAnimationTextChildren() {

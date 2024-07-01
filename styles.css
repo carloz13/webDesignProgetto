@@ -617,27 +617,27 @@ menu li a img {
     height: 100%;
 
 }
-
+/*
 .menu-social {
     width:100%;
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 5vh;
-    height: 7vh;
+    margin-top: 15vh;
 }
 
 #ul-social, .li-social, i {
-    list-style-position: inside;
-    height: 7vh;
-    display: inline;
+    display: inline-block;
     color: white;
+    height: 15vh;
 }
 
 .li-social a {
     text-decoration: none;
-    height: 100%;
+    display: inline-block;
+    height: 15vh;
 }
+*/
 
 /* ------------------------------------------------ */
 
