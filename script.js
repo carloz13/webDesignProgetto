@@ -268,7 +268,9 @@ function allTextsChildrens() {
         "Federico Celia, Federica Miccoli, Ilaria Pagano, Zhiyi Wang",
         "Lorenzo Mecca, Giulia Rebaudo, Alessio Scarpulla, Carlo Zecca",
         "Gaia Viriglio",
-        "Corso magistrale Design Prodotto Evento Corso triennale Informatica Laboratorio di Web Design - Prof. Andrea Vian a.a. 2023/2024"
+        "Corso magistrale Design Prodotto Evento",
+        "Corso triennale Informatica",
+        "Laboratorio di Web Design - Prof. Andrea Vian a.a. 2023/2024"
     ];
 }
 
