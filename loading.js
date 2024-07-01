@@ -5,22 +5,27 @@ $(document).ready(function () {
 
 	var images = ['images/loading/rondineGiu_.webp', 'images/loading/rondineSu_.webp'];
 	var currentIndex = 0;
-	$('#loadingBird').load('images/loading/rondineGiu_.webp #loadingBird');
-	$('#loadingBird').load('images/loading/rondineSu_.webp #loadingBird');
+	// $('#loadingBird').load('images/loading/rondineGiu_.webp #loadingBird');
+	// $('#loadingBird').load('images/loading/rondineSu_.webp #loadingBird');
 
+	
+	$('#loadingBird').attr('src', "images/loading/rondine.gif");
 	// Imposta l'intervallo per alternare le immagini ogni 3 secondi (3000 millisecondi)
-	const intervId = setInterval(function () {
-		$('#loadingBird').attr('src', images[currentIndex]);
-		currentIndex = (currentIndex + 1) % images.length;
+	// const intervId = setInterval(function () {
+	// 	$('#loadingBird').attr('src', images[currentIndex]);
+	// 	currentIndex = (currentIndex + 1) % images.length;
 
-		if (document.readyState === 'complete')
-			clearInterval(intervId);
-	}, 600);
+	// 	if (document.readyState === 'complete')
+	// 		clearInterval(intervId);
+	// }, 600);
+
 });
-$(window).on('load', function(){
-	$('#loadingDiv').hide();
-	$('html').attr('style', 'overflow-y: scroll;');
-});
+	
+	$(window).on('load', function(){
+		$('#loadingDiv').hide();
+		$('html').attr('style', 'overflow-y: scroll;');
+	});
+
 function removeLoader(){
 	$("#loadingDiv").fadeOut(500, function() {
 	// fadeOut complete. Remove the loading div
