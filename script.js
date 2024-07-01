@@ -330,7 +330,10 @@ function addCredits() {
                 <p class='testoFinale testoCrediti'>${texts[8]}</p>
                 <h2>Illustratrice:</h2>
                 <p class='testoFinale testoCrediti'>${texts[9]}</p>
-                <p id='lastText' class='testoFinale testoCrediti'>${texts[10]}</p>
+                <h2>_________________</h2>
+                <p class='testoFinale testoCrediti'>${texts[10]}</p>
+                <p class='testoFinale testoCrediti'>${texts[11]}</p>
+                <p id='lastText' class='testoFinale testoCrediti'>${texts[12]}</p>
                 <a class='linkImages' href='https://unige.it#crediti'><img src='images/loghi/logoUnige.svg' alt='Università di genova'></a>
             </div>
         </div>
