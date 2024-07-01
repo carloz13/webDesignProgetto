@@ -330,20 +330,46 @@ function addCredits() {
 					Lorenzo Mecca, Giulia Rebaudo, Alessio Scarpulla, Carlo Zecca
 				</p>
                 <h2>Illustratrice:</h2>
-                <p class='testoFinale testoCrediti'>
-					Gaia Viriglio
-				</p>
-				<h2> __________ </h2>
-                <p id='lastText' class='testoFinale testoCrediti'>
-					<br>
-					Corso magistrale Design Prodotto Evento<br>
-					Corso triennale Informatica
-					<br><br>
-					Laboratorio di Web Design<br>
-					Prof. Andrea Vian a.a. 2023/2024
-					<br><br>
-				</p>
-                <a class='linkImages' href='https://unige.it'><img src='images/loghi/logoUnige.svg'></a>
+                <p class='testoFinale testoCrediti'>${texts[9]}</p>
+                <br><br>
+                <p class='testoFinale testoCrediti'>${texts[10]}</p>
+                <p class='testoFinale testoCrediti'>${texts[11]}</p>
+                <p id='lastText' class='testoFinale testoCrediti'>${texts[12]}</p>
+                <a class='linkImages' href='https://unige.it'><img src='images/loghi/logoUnige.svg' alt='Università di genova'></a>
+                <div class="menu-social">
+                    <ul id="ul-social">
+                        <li class="li-social">
+                        <a href="https://twitter.com/SeFossimoComeRondine" title="Seguici su X" aria-label="Seguici su X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        </li>
+                        <li class="li-social">
+                        <a href="https://www.youtube.com/channel/@sefossimocomerondine" title="Seguici su Youtube" aria-label="Seguici su Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        </li>
+                        <li class="li-social">
+                        <a href="https://www.instagram.com/sefossimocomerondine" title="Seguici su Instagram" aria-label="Seguici su Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </li>
+                        <li class="li-social">
+                        <a href="https://www.facebook.com/SeFossimoComeRondine/" title="Seguici su Facebook" aria-label="Seguici su Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        </li>
+                        <li class="li-social">
+                        <a href="https://www.tiktok.com/@sefossimocomerondine" title="Seguici su Tiktok" aria-label="Seguici su Tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        </li>
+                        <li class="li-social">
+                        <a href="https://t.me/Se_Fossimo_Come_Rondine" title="Seguici su Telegram" aria-label="Seguici su Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
             </div>
         </div>
     `);

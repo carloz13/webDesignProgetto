@@ -259,45 +259,6 @@ p {
 
 /* ------------------------ caricamento pagina -------------------------------- */
 
-@keyframes spinner-line-fade-more {
-  0%, 100% {
-    opacity: 0; /* minimum opacity */
-  }
-  1% {
-    opacity: 1;
-  }
-}
-
-@keyframes spinner-line-fade-quick {
-  0%, 39%, 100% {
-    opacity: 0.25; /* minimum opacity */
-  }
-  40% {
-    opacity: 1;
-  }
-}
-
-@keyframes spinner-line-fade-default {
-  0%, 100% {
-    opacity: 0.22; /* minimum opacity */
-  }
-  1% {
-    opacity: 1;
-  }
-}
-
-@keyframes spinner-line-shrink {
-  0%, 25%, 100% {
-    /* minimum scale and opacity */
-    transform: scale(0.5);
-    opacity: 0.25;
-  }
-  26% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 .loading {
     position: fixed;
     display: flex;
@@ -319,26 +280,6 @@ p {
     position: fixed;
     top: 55%;
     text-align: center;
-}
-@-webkit-keyframes load8 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes load8 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
 }
 #loadingDiv {
     position:fixed;;
@@ -627,7 +568,7 @@ menu {
     height: 100%;
 }
 
-menu ul {
+ul {
     list-style: none;
     width: 100%;
     display: flex;
@@ -675,6 +616,27 @@ menu li a img {
     width: 100%;
     height: 100%;
 
+}
+
+.menu-social {
+    width:100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+    height: 7vh;
+}
+
+#ul-social, .li-social, i {
+    list-style-position: inside;
+    height: 7vh;
+    display: inline;
+    color: white;
+}
+
+.li-social a {
+    text-decoration: none;
+    height: 100%;
 }
 
 /* ------------------------------------------------ */
