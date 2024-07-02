@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
     window.onresize = function () {
         viewportWidth = window.innerWidth;
         var vh = Math.abs(viewportHeight - window.innerHeight); // calcolo differenza tra viewportHeight vecchio e quello nuovo
-        bannerContainer.style.height = calcTotalWidthFrames() - viewportWidth + vh + "px";
+        bannerContainer.style.height = calcTotalWidthFrames() - viewportWidth - vh + "px";
         homepage.style.width = insiemeFramesBanner.firstElementChild.offsetWidth + "px";
         if((window.innerHeight/window.innerWidth)>2) document.getElementById('home_scritta').style.transform = 'translate(0, -15%)';
         banner.style.width = bannerContainer.offsetHeight + viewportWidth + "px";
         banner.style.height = homepage.offsetHeight / 1.5 + "px";
         sittingBirdContainer.style.width = insiemeFramesBanner.firstElementChild.offsetWidth + "px";
-        sittingBirdEndContainer.style.width = insiemeFramesBanner.firstElementChild.offsetWidth + "px";
+        sittingBirdEndContainer.style.width = insiemeFramesBanner.lastElementChild.offsetWidth + "px";
         birdImgStory.style.width = (3/4)*sittingBird.offsetWidth + "px";
         document.querySelectorAll('.frameBambini')[20].style.height = document.getElementById('containerFinale').offsetHeight + "px";
     }
@@ -107,9 +107,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if(dissolvenza.getBoundingClientRect().top <= 0) {
             dissolvenza.style.opacity = Math.abs(dissolvenza.getBoundingClientRect().top) / (dissolvenza.offsetHeight - viewportHeight);
+        } else {
+            dissolvenza.style.opacity = 0;
         }
-        if(animazioneDissolvenzaBounding.bottom <= viewportHeight) {
-            
+        if(dissolvenza.getBoundingClientRect().bottom <= viewportHeight) {
+            dissolvenza.style.opacity = 1;
         }
 
 
