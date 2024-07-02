@@ -392,7 +392,7 @@ z-index: 2;
 .testiStoriaBambini {
 	font-family: Rouli;
 	font-weight: bold;
-	font-size: 2.5vw;
+	font-size: 3vw;
 	height: 75%;
 	position: relative;
 	top: 0;
@@ -405,6 +405,7 @@ z-index: 2;
 	top: 0%;
 	width: 60%;
 	height: 40vh;
+    font-size: 2vw;
 }
 
 #testoBambini2 {
@@ -434,7 +435,7 @@ z-index: 2;
 
 .storia {
 	font-family: Rouli;
-	font-size: 2.7vw;
+	font-size: 3vw;
 	position: relative;
 	top: 0;
 	margin-bottom: 0.7em;
@@ -442,7 +443,7 @@ z-index: 2;
 
 .title {
 	font-family: Rouli;
-	font-size: 25vw;
+	font-size: 6vw;
 	z-index: 5;
 	position: relative;
 	top: 0;
@@ -514,50 +515,12 @@ z-index: 2;
 	color: white;
 }
 
-@media screen and (min-width: 1024px) {
-	.testiStoriaBambini {
-		font-size: 2vw;
-	}
-	
-	.storia {
-		font-size: 2vw;
-	}
-
-	.title {
-		font-size: 10vw;
-	}
-
-	#testoFinale {
-		font-size: 2vw;
-	}
+@media screen and (max-height: 400px) {
+    #testoBambini1 {
+        font-size: 1.3vw;
+    }
 }
 
-/*
-@media screen and (max-height: 580px) {
-	#testoBambini1 {
-		font-size: 4vh;
-	}
-
-}
-
-@media screen and (max-width: 700px) {
-	.testiStoriaBambini {
-		font-size: 3vw;
-
-	}
-	.storia {
-		font-size: 3vw;
-	}
-
-	.title {
-		font-size: 9vw;
-	}
-	
-	#testoFinale {
-		font-size: 3vw;
-	}
-}
-*/
 /* -----------------------------menu----------------------------- */
 
 menu, ul {
