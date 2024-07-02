@@ -98,10 +98,10 @@ p {
     flex: none;
     position: relative;
 }
-/*
+
 .frameBanner:last-child {
     min-width: auto;
-}*/
+}
 
 .frameBanner img {
     width: 100%;
