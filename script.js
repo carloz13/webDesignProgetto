@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var vh = Math.abs(viewportHeight - window.innerHeight); // calcolo differenza tra viewportHeight vecchio e quello nuovo
         bannerContainer.style.height = calcTotalWidthFrames() - viewportWidth - vh + "px";
         homepage.style.width = insiemeFramesBanner.firstElementChild.offsetWidth + "px";
-        if((window.innerHeight/window.innerWidth)>2) document.getElementById('home_scritta').style.transform = 'translate(0, -15%)';
+        if((window.innerHeight/window.innerWidth)>2) document.getElementById('home_scritta').style.transform = 'translateY(-20%)';
         banner.style.width = bannerContainer.offsetHeight + viewportWidth + "px";
         banner.style.height = homepage.offsetHeight / 1.5 + "px";
         sittingBirdContainer.style.width = insiemeFramesBanner.firstElementChild.offsetWidth + "px";
